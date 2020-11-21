@@ -127,17 +127,9 @@ main div{
     height: 210px;
     margin: auto;
     margin-bottom: 40px;
-    filter: grayscale(0.6);
     transition: all 0.3s;
     cursor: pointer;
-}
-
-main div:hover{
-    filter: grayscale(0);
-    
-}
-main div:hover img{
-    object-position: right;
+    overflow: hidden;
 }
 
 main div img{
@@ -152,11 +144,18 @@ main div img{
     filter: grayscale(0.6);
 }
 
-.Blur .picture_container{
-    filter: blur(1px);
+.Grayscale .picture_container:hover{
+    filter: grayscale(0);
 }
 
-.Zoom .picture_container{
+.Blur .picture_container{
+    filter: blur(1.5px);
+}
+.Blur .picture_container:hover{
+    filter: blur(0px);
+}
+
+.Zoom .picture_container:hover img{
     transform: scale(1.1);
 }
 
