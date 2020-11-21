@@ -85,22 +85,22 @@ header div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 15px;
+    padding: 30px 15px;
     background-color: var(--main-white);
     border: var(--main-color) 1px solid;
     border-radius: 5px;
     z-index: 5;
-    opacity: 0.5;
+    opacity: 1;
 }
 #board h2{
     width: 100%;
     text-align: center;
-    padding-bottom: 1vh;
+    padding-bottom: 3vh;
     border-bottom: 1px var(--main-color) solid;
 }
 #board div{
         margin: auto;
-        padding-top: 1vh;
+        padding-top: 3vh;
     }
 
 main{
