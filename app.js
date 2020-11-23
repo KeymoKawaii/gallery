@@ -20,29 +20,24 @@ for (const anim_btn of anim_btns) {
   anim_btn.addEventListener('click', changeAnim);
 }
 
-// console.log(pictures)
-// for (const picture of pictures) {
-//     let img = this.getElementsByTagName('img');
-//     console.log(img);
-//     picture.addEventListener('click', displayPopup);
-//   }
-
-// function displayPopup(){
-//     console.log('Hello');
-// }
-
-// displayPopup();
-
 function changeFilter(){
   main_grid.classList.remove(filter_btn_value_filter);
-  filter_btn_value_filter = this.value;
-  main_grid.classList.add(filter_btn_value_filter);
+  if(filter_btn_value_filter === this.value){
+    filter_btn_value_filter = 'undefined';
+  }else{
+    filter_btn_value_filter = this.value;
+    main_grid.classList.add(filter_btn_value_filter);
+  }
   return filter_btn_value_filter;
 }
 
 function changeAnim(){
   main_grid.classList.remove(filter_btn_value_anim);
-  filter_btn_value_anim = this.value;
-  main_grid.classList.add(filter_btn_value_anim);
+  if(filter_btn_value_anim === this.value){
+    filter_btn_value_anim = 'undefined';
+  }else{
+    filter_btn_value_anim = this.value;
+    main_grid.classList.add(filter_btn_value_anim);
+  }
   return filter_btn_value_anim;
 }

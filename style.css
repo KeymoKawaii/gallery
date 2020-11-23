@@ -102,6 +102,15 @@ header div{
         margin: auto;
         padding-top: 3vh;
     }
+    #board div input{
+        padding: 5px;
+        border-radius: 5px;
+    }
+    #board div input:focus{
+        color: var(--main-white);
+        background-color: var(--main-color);
+    }
+
 
 main{
     max-width: 1240px;
@@ -165,4 +174,16 @@ main div img{
 
 .Translate .picture_container:hover img{
     object-position: center;
+}
+
+.Dotted .picture_container:hover{
+    border-radius: 50%;
+}
+
+.Invert .picture_container img{
+    filter: hue-rotate(90deg);
+}
+
+.Invert .picture_container img:hover{
+    filter: hue-rotate(0deg);
 }
